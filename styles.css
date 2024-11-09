@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Soft light background */
+    margin: 0;
+    padding: 50px; /* Reduced padding for a cleaner look */
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff; /* White background for the resume */
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #2c2c2c; /* Dark background */
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #4CAF50; /* Green accent */
+}
+
+.profile-picture {
+    width: 120px; /* Slightly smaller profile picture */
+    height: 120px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50; /* Green border */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+    color: #2c2c2c; /* Dark color for headers */
+}
+
+h3 {
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0 10px;
+    color: #4CAF50; /* Green color for section headers */
+    border-bottom: 2px solid #4CAF50; /* Underline for headers */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    background-color: #ffffff; /* White background for content */
+}
+
+#personal-info, #education, #work-experience {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Skills List */
+#skills ul {
+    list-style-type: none; /* No bullets */
+    padding: 0;
+}
+
+#skills li {
+    background-color: #e7f4e4; /* Light green background for skills */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-section, .right-section {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
